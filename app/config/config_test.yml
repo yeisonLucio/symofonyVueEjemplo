@@ -1,0 +1,18 @@
+imports:
+    - { resource: config_dev.yml }
+
+framework:
+    assets: ~
+     #   json_manifest_path: '%kernel.project_dir%/web/build/manifest.json'
+    test: ~
+    session:
+        storage_id: session.storage.mock_file
+    profiler:
+        collect: false
+
+web_profiler:
+    toolbar: false
+    intercept_redirects: false
+
+swiftmailer:
+    disable_delivery: true
